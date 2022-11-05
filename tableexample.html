@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- Ray Ryon 10/19/2020
+	 Example that shows how to build a basic table.   -->
+<head>
+		<title>Table Example</title>
+		<style>
+			th { background-color : #eaeaea; }
+			table { width : 75%;
+				margin: auto;
+				border-spacing : 0px;
+				border-style : solid;
+				background-color : #18e7ce;
+			}
+			td, th {
+				border-style : solid;				
+				padding : 10px;
+				}
+
+			
+			td.e { background-color : #E71831; }
+			caption {
+				font-family: Georgia, serif;
+				font-size:20pt;
+					}
+		</style>
+</head>
+<body>
+	<table    >
+		<caption>Birthday List</caption>
+		<tr>
+			<th >Name</th>
+			<th>Birthday</th>
+			<th>Phone</th>
+			<th>Email</th>
+		</tr>
+		<tr>
+			<td>Jack</td>
+			<td>5/13</td>
+			<td>&nbsp;</td>
+			<td class="e">jack@gmail.com</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Jill</td>
+			<td rowspan="2">7/1</td>
+			<td>857-555-5555</td>
+			<td class="e">jill@gmail.com</td>
+		</tr>
+		<tr>
+			<td>857-666-6666</td>
+			<td class="e">jill@hotmail.com</td>
+		</tr>
+	</table>
+</body>

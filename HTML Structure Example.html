@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- Example to show how to use HTML to add structure.
+ Ray Ryon 9/9/2022 -->
+<style>
+
+    #container { border:2px solid maroon; }
+	h1 {margin:0px;} 
+    header {background-color: #A44; 
+			padding:10px;}
+	nav {border-bottom: 2px solid maroon;
+		padding:10px;}
+	#content1 { padding:10px;			} 
+	#content2 { padding-left:10px;	background-color: #CCC; 		} 
+	hr { border: 1px solid maroon; 
+		margin:0px;}
+	p { padding:5px;}	
+	.special { font-style : italic; 
+		font-weight:bold; 
+		color:green; 
+		font-size:1.5em;
+		border: 1px solid black;}
+	footer { padding:10px;
+		font-size:2em;
+	}
+</style>
+<title>HTML Structure Example</title>
+</head>
+<body>
+<div id="container">
+	<header>
+		<h1>HTML for Structure</h1>
+	</header>
+	<nav>
+		<h2>Links for W3Schools Tutorials</h2>
+		<ul><li><a href="https://www.w3schools.com/tags/tag_div.asp" target="_blank">The div tag</a></li>
+			<li><a href="https://www.w3schools.com/html/html_blocks.asp" target="_blank">Block and Inline Structure</a></li>
+			<li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp"  target="_blank">Semantic Elements</a></li>
+		</ul>
+		<br>
+	</nav>
+	<div id="content1" >
+		<h2>Adding Structure by using HTML elements</h2>
+		<p>An HTML web page needs to be organized and to do that there are tags created for structure. We have already seen that the html, head and body give the basic structure.  Now we will look at additional ways to add further stucture.  Think of a web page as being divided into different areas.  We can use container tags to set the structure for each of those areas. A container is used to contain other elements, it is a way to help organize your elements. </p>
+		<div id="content2">
+			<h3>The div container tag</h3>		
+			<p>The div html tag is used to create generic containers. The div element is a block element. Often there is one div tag that wraps all content, then there are other subcontainer div tags used to split the page up into different sections. </p>
+			<p> An id or class attribute is added to the div tag to give a name to that section so other statements can refer to it.  For example CSS uses the id or class name to add special style features. There are div containers in this web page, look at the code to check it out.</p>
+		</div>
+		<h3>The span container tag</h3>
+		<p>Another container is created using the span tag. It is similar to the div except it is an inline element.  Inline elements do not begin on new lines, but start from the next available position after the previous content on the same line. Inline content will also end at the end of the content.</p>
+		<p>
+		This paragraph Uses <span class="special"> a span area.</span>Style is added to make the span area contain a black border, use green text and increase the size. </p>
+		<h3>HTML5 Semantic elements</h3>
+		<p>HTML5 introduced additional structure elements know as semantic elements. These elements work similar to the div element but have specialized use.  For example the nav element is used as a container for adding a navigation block. A header element is use to create a page heading. Also a footer element is used to add a block at the bottom of a web page.</p>
+	</div>
+	<footer>Be sure to check out the HTML and CSS code in this example.</footer>
+</div>
+</body>
+</html>

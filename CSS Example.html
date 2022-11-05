@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- Examples of CSS selectors, class and id attributes. Ray Ryon 9/9/2022 -->
+<style>
+
+    #container { border:2px solid maroon; }
+	h1 {margin:0px;} 
+    header {background-color: #A44; 
+			padding:10px;}
+	nav {border-bottom: 2px solid maroon;
+		padding:10px;}
+	#content { padding:10px;			} 
+	hr { border: 1px solid maroon; 
+		margin:0px;}
+	p { padding:5px;}	
+	.special { font-style : italic; 
+		font-weight:bold; 
+		color:green; 
+		font-size:1.5em;}
+	table {border: 1px solid maroon;margin:auto;}
+	footer { padding:10px;
+		font-size:2em;
+	}
+</style>
+<title>CSS Examples</title>
+</head>
+<body>
+<div id="container">
+	<header>
+		<h1>Using CSS to add Style</h1>
+	</header>
+	<nav>
+		<h2>Links for W3Schools Tutorials</h2>
+		<ul>
+			<li><a href="https://www.w3schools.com/html/html_css.asp" target="_blank">Beginning CSS.</a></li>
+		</ul>
+		<br>
+	</nav>
+		
+	<hr>
+	<div id="content">
+		<h2>Using CSS to add Style</h2>
+		
+		<p>CSS allows a web developer a method to format the web page.  Some of the styles that can be set with CSS is color, text font, size of elements and position of elements.</p>
+		<h3>Three methods to add CSS to an HTML document.</h3>
+		
+		<ul>
+			<li>Inline</li>
+			<li>Internal</li>
+			<li>External</li>
+		</ul>
+		
+		<p style="border: 1px solid black; color:#00F;">
+		This paragraph uses an <span class="special">inline style</span>. The style attribute is added to the p tag to give the paragraph a black border and blue text.</p>
+		<p><span class="special">Internal styles</span> are placed inside of a begin and end style tag in the head section of the web page. To identify the html element that is being styled a selector must be used.  The CSS rules follow the selector and are placed inside of curly braces.  The selector identifies the HTML element that uses the defined CSS rules. </p>		
+		<p><span class="special">External styles</span> are placed in a different file. Similar to internal styles, the html element that is being styled is identified by a selector and the CSS rules follow the selector and are placed inside of curly braces. A link statement is placed in the head section of the html that indicates the name of the CSS file.</p>		
+		<h2>Selectors</h2>
+		<p>You will notice that selectors can be of various types.  Some selectors are the name of the HTML element. In this page the internal CSS uses the header selector to create a maroon background color for the header area of the page.</p>		
+		<p> Other selectors might refer to an ID attribute value, these will have a Hash tag in front of their name in the CSS code. Notice the div tags often use an id.  Look in the CSS code in the head section to find the id selector with a hash tag. </p>		
+		<p> Another type of selector uses a class attribute value, and will have a dot in front of it in the internal style area. Looking at the code you will see a span area with a class value of special.  Notice that the corresponding CSS selector is .special.</p>
+		<table>
+			<caption>CSS Selector Summary</caption>
+			<tr><th>HTML element value</th><th>CSS selector value</th></tr>
+			<tr><td>tag name</td><td>tag name</td></tr>
+			<tr><td>id attribute value</td><td>hash tag symbol and id attribute value</td></tr>
+			<tr><td>class attribute value</td><td>dot and class attribute value</td></tr>
+		</table>
+
+	</div>
+	<footer>Be sure to check out the HTML and CSS code in this example.</footer>
+</div>
+</body>
+</html>

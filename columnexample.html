@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- Ray Ryon 10/2/2022
+	Unit 6, Example without columns   -->
+<head>
+	<title>Column example</title>
+<style>  
+* {
+		box-sizing: border-box;
+  /*this allows padding and borders to be considered part of the column width. However margin is considered separate.*/
+  }
+	#container {    
+		max-width:600px;
+		background-color:#0F0;
+		margin: 0 auto;
+	}
+	header {
+		height:60px;
+		background-color:#036;
+	}  
+	nav { 
+      background-color:#C93;       
+	  height:30px; 
+   }    
+	nav ul { 
+		list-style-type:none;       
+		margin:0;       
+		padding:5px; 
+   }
+	nav li {
+		display:inline;       
+		padding-right:20px; 
+   } 
+	nav a:link {
+		color:#FFF;
+		text-decoration:none;
+	}
+	nav a:visited {
+		color:#FFF;
+		text-decoration:none;
+	}
+	nav a:hover {
+		color:#630;
+		text-decoration:underline;
+		box-shadow: 0 0 25px 5px white;
+	}
+	.center {
+		margin:auto;
+		text-align: center;
+	}
+/* Container for column area */
+	#content {
+		border:3px solid black;
+	}
+	#area1 {
+		background-color:#999;
+		padding:0px 10px;
+	}
+	#area2 {
+		background-color:#CCC;
+		padding:0px 10px;
+	}
+	#area3 {
+		background-color:#999;
+		padding:0px 10px;
+	}
+	footer {
+		background-color:#900;
+		color:#FFF;
+	}
+</style>
+<body>
+<div id="container">
+	<header class="center">
+		<h1>Column example</h1>
+	</header>
+	<nav>
+	   <ul>
+		  <li><a href="https://www.w3schools.com/html/html_layout.asp">Layouts</a></li> 
+		  <li><a href="https://www.w3schools.com/css/css_float.asp">Float</a></li> 
+		  <li><a href="https://www.w3schools.com/bootstrap5/index.php">Bootstrap</a></li> 
+		  <li><a href="https://www.w3schools.com/css/css3_flexbox.asp">Flexbox</a></li> 
+		  <li><a href="https://www.w3schools.com/css/css_grid.asp">Grid Layout</a></li> 
+	   </ul> 
+	</nav> 
+	<div id="content">
+		<article id="area1">
+			<h1>Area 1</h1>
+			<p>The normal placement of content on a web page is to place it after the previous content, flowing from the left to the right and then down to the next line.</p>
+			<p>Areas can be created using HTML div tags with ids or it can be created with the semantic HTML tags such as article, section, aside.
+			</p>			
+			<p>Block display style areas begin on a new line and often have extra space above and below. </p>
+		</article> <!--end area1-->
+		<section id="area2">
+			<h2>Area 2</h2>
+			<p>Multicolumn web pages can be created using various techniques. The four most common techniques are:
+			<ol>
+				<li>Float and clear CSS properties</li>
+				<li>Flexbox CSS property</li>
+				<li>CSS frameworks</li>
+				<li>CSS grid</li>
+			</ol>
+			</p>
+		</section> <!--end area2-->
+		<aside id="area3">
+			<h2>Area 3</h2>
+			<p>This page has a div container that contains a header, nav, div with id content, and a footer.</p> 
+			<p>The content area contains article, section and aside areas.  They also contain id's for ease of identification.</p>
+		</aside> <!--end area3-->
+	</div> <!--end content-->
+	<footer>
+	<img src="image001.png" alt="IHCC logo">
+		<p> The footer area can contain multiple elements.  Depending on it's content, you might want a column structure there also.
+	</footer>
+</div><!--end container--> 
+</body> 
+</html>

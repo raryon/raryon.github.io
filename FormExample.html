@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Example of HTML code for a form.  
+		10/26/2020 Ray Ryon
+		location options updated 10/25/2021
+		CSS File updated 10/17/2022-->
+<link rel="stylesheet" href="FormExample.css">
+<title>Form Example</title>
+</head>
+<body>
+<h1>Employee Survey</h1>
+<form method="post" target="_blank" action="https://www.w3schools.com/action_page.php">
+	<fieldset class="ei">
+		<legend>Employee Information</legend>
+		<label for="firstname">First Name</label>
+		<input type="text" name="firstname" id="firstname" required>
+		<br>
+		<label for="lastname">Last Name</label>
+		<input type="text" name="lastname" id="lastname">
+		<br>
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" placeholder="email@somewhere.com">
+		<br>		
+		<label for="Location">Location</label>
+		<select name="Location" id="Location">
+		  <option value="None" selected disabled>Please select</option>
+		  <option value="Albia">Albia</option>
+		  <option value="Bloomfield">Bloomfield</option>
+		  <option value="Cardinal">Cardinal</option>
+		  <option value="Centerville">Centerville</option>
+		  <option value="Chariton">Chariton</option>
+		  <option value="Eddyville">Eddyville</option>
+		  <option value="Fairfield">Fairfield</option>
+		  <option value="Keota">Keota</option>
+		  <option value="Moravia">Moravia</option>
+		  <option value="Moulton-Udell">Moulton-Udell</option>
+		  <option value="North Mahaska">North Mahaska</option>
+		  <option value="Oskaloosa">Oskaloosa</option>
+		  <option value="Ottumwa">Ottumwa</option>
+		  <option value="Pekin">Pekin</option>
+		  <option value="Seymour">Seymour</option>
+		  <option value="Sigourney">Sigourney</option>
+		  <option value="Tri County">Tri County</option>
+		  <option value="Van Buren">Van Buren</option>
+		  <option value="Wayne">Wayne</option>
+		</select>	
+		<br>
+	</fieldset>
+	<fieldset>	
+	<legend>Web Environment</legend>
+		<input type="radio" name="environment" id="Front End" value="1" checked> 
+		<label for="Front End">Front end</label>
+		<br>
+		<input type="radio" name="environment" id="Back End" value="2"> 
+		<label for="Back End">Back end</label>
+		<br>
+		<input type="radio" name="environment" id="Full Stack" value="3"> 
+		<label for="Full Stack">Full Stack</label>	
+	</fieldset>
+	<fieldset>	
+	<legend>Languages</legend>
+		<input type="checkbox" name="html" id="html" value="YES" checked> 
+		<label for="html">HTML</label>
+		<br>
+		<input type="checkbox" name="php" id="php" value="YES"> 
+		<label for="php">PHP</label>
+		<br>
+		<input type="checkbox" name="python" id="python" value="YES"> 
+		<label for="python">Python</label>
+		<br>		
+		<input type="checkbox" name="vb" id="vb" value="YES"> 
+		<label for="vb">Visual Basic</label>
+		<br>	
+		<input type="checkbox" name="asp" id="asp" value="YES"> 
+		<label for="asp">ASP.NET</label>
+		<br>	
+	</fieldset>
+		<input type="submit" value="Submit">
+</form>
+</body>
+</html>
